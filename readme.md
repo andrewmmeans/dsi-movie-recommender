@@ -41,6 +41,7 @@ To explore how our more complex models captured the signal from the noise we nee
 
 Our average RMSE for users on this model was 1.6577026497319065 - YIKES! What good is a predictor that can get within that many stars on a 1-5 scale.  
 
+![](img/itit.png)
 
 # Graphing Users
 
