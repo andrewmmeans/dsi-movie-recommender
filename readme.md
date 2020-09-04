@@ -1,5 +1,5 @@
 # Watch Better Movies Incorporated 
-[]!(img/leo-pointing.jpg)
+![](img/leo-pointing.jpg)
 #### presented by Andrew Means and Jacob Hei
 
 
@@ -51,9 +51,9 @@ Adjusting rank: we sampled a few different rank values to see how accurate our m
 
 hyper parameter adjustments by including bias factors for dampened mean, rating bias adjustment, and regularization learning rate.
 
-[]!(img/alssummary.png)
-[]!(img/alspredtable.png)
-[]!(img/rmses.png)
+![](img/alssummary.png)
+![](img/alspredtable.png)
+![](img/rmses.png)
 
 # Random Forest Model
 We decided it would be prudent to add in other features to our recommendation model.
