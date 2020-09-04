@@ -22,8 +22,8 @@ Tired of scrolling to infinity? So were we.  That is, until we developed a movie
 
 # EDA
 Datasets used in building the model
-1) training set of 800,000 instances of movie ratings from ___ users on ___ movies
-2) movie database with genre description tags
+1) training set of 800,000 instances of movie ratings from 5399 users on 3662 movies
+2) movie database with genre description tag
 3) kaggle database with tfidf vectorized plot description words
 
 
@@ -41,6 +41,7 @@ To explore how our more complex models captured the signal from the noise we nee
 
 Our average RMSE for users on this model was 1.6577026497319065 - YIKES! What good is a predictor that can get within that many stars on a 1-5 scale.  
 
+![](img/itit.png)
 
 # Graphing Users
 
@@ -61,6 +62,8 @@ hyper parameter adjustments by including bias factors for dampened mean, rating 
 ![](img/alssummary.png)
 ![](img/alspredtable.png)
 ![](img/rmses.png)
+
+![](img'rmseplot.png)
 We can see that our rmse isn't getting terribly better with an increase in rank. 
 
 ![](img/violin.png)
@@ -71,12 +74,15 @@ The model is better at predicting 4 and 5 compared to the vast spread of the pre
 We decided it would be prudent to add in other features to our recommendation model.
 The context of the information we have on users as well as tfidf vectorized words of plot description would allow our model to better pick up on the nuances left out by sparse ratings matrix.  
 
+![](img/mergeddf.png)
+
 Unfortunately... it crashed! again and again.
 
 Until we dropped zipcode data (rip zipcode data - useful and not forgotten)
 
 The RFregressor was able to pull out a RMSE of .33 - more than half the error of the ALS model!
 
+NaN's were dealt with by filling in with the dampened mean.  
 
 
 
@@ -84,7 +90,7 @@ The RFregressor was able to pull out a RMSE of .33 - more than half the error of
 
 # Testing the model on unseen data
 
-our predictions for the unknown data are saved in our requests.csv file with our added prediction column.
+our predictions for the unknown data are saved as Andrew_Jacob_submission.csv in data folder with our added prediction column. 
 
 
 # Conclusion
