@@ -27,7 +27,13 @@ Datasets used in building the model
 
 
 
+![](img/kvalue1.png)
+1[](img/kvalue2.png)
 
+Dampend mean plot
+
+![](img/dampmeantable.png)
+![](img/dampmeanplot.png)
 
 # Item-item Similarity Model
 To explore how our more complex models captured the signal from the noise we needed an initial model to compare it to.  Item-item similarity is a fine comparision 
@@ -54,6 +60,7 @@ hyper parameter adjustments by including bias factors for dampened mean, rating 
 ![](img/alssummary.png)
 ![](img/alspredtable.png)
 ![](img/rmses.png)
+![](img/violin.png)
 
 # Random Forest Model
 We decided it would be prudent to add in other features to our recommendation model.
